@@ -7,13 +7,13 @@ from django.conf import settings
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = settings.CODESPACE_URL or 'http://localhost:8000/'
+    base_url = settings.CODESPACE_URL or 'http://localhost:8000/api/'
     return Response({
-        'users': base_url + 'api/users/',
-        'teams': base_url + 'api/teams/',
-        'activities': base_url + 'api/activities/',
-        'leaderboard': base_url + 'api/leaderboard/',
-        'workouts': base_url + 'api/workouts/'
+        'users': base_url + 'users/',
+        'teams': base_url + 'teams/',
+        'activities': base_url + 'activities/',
+        'leaderboard': base_url + 'leaderboard/',
+        'workouts': base_url + 'workouts/'
     })
 
 class UserViewSet(viewsets.ModelViewSet):
