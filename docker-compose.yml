@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+  backend:
+    build:
+      context: ./octofit-tracker/backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./octofit-tracker/backend:/app
+    command: python manage.py runserver 0.0.0.0:8000
+
+volumes:
+  mongodb_data:
+    driver: local
