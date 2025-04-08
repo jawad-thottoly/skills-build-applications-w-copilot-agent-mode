@@ -26,7 +26,10 @@ SECRET_KEY = "django-insecure-6dvb3-alyz4zkwyn-12!wymn*w2t%04#$q%_^q#qmw5ww&^e5h
 DEBUG = True
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
+
+# Add this to the settings file
+CODESPACE_URL = 'https://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev'
 
 
 # Application definition
