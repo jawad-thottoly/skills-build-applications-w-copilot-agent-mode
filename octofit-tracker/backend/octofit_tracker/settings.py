@@ -25,11 +25,11 @@ SECRET_KEY = "django-insecure-6dvb3-alyz4zkwyn-12!wymn*w2t%04#$q%_^q#qmw5ww&^e5h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Allow all hosts
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
+# Ensure ALLOWED_HOSTS includes the updated Codespace URL
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'opulent-space-goldfish-7vrj99jjrwp53p7r48000.app.github.dev']
 
-# Add this to the settings file
-CODESPACE_URL = 'https://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev'
+# Update the CODESPACE_URL to the actual Codespace name
+CODESPACE_URL = 'https://opulent-space-goldfish-7vrj99jjrwp53p7r48000.app.github.dev'
 
 
 # Application definition
