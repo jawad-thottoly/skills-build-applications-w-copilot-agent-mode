@@ -7,7 +7,7 @@ from django.conf import settings
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = settings.CODESPACE_URL or 'http://localhost:8000/api/'
+    base_url = 'https://opulent-space-goldfish-7vrj99jjrwp53p7r4-8000.app.github.dev/api/' or 'http://localhost:8000/api/'
     return Response({
         'users': base_url + 'users/',
         'teams': base_url + 'teams/',
