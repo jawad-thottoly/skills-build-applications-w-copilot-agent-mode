@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'opulent-space-goldfish-7vrj99jjrwp53p7r48000.app.github.dev']
 
 # Ensure the CODESPACE_URL includes the API endpoint suffix
-CODESPACE_URL = 'https://opulent-space-goldfish-7vrj99jjrwp53p7r48000.app.github.dev/api/'
+CODESPACE_URL = 'https://opulent-space-goldfish-7vrj99jjrwp53p7r4-8000.app.github.dev/api/'
 
 
 # Application definition
